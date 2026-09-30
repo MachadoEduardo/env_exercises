@@ -1,0 +1,29 @@
+{
+  "name": "exercicios-dotenv",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "ts-node src/app.ts",
+    "start:dev": "cross-env NODE_ENV=development ts-node src/app.ts",
+    "start:prod": "cross-env NODE_ENV=production ts-node src/app.ts",
+    "check:env-schema": "ts-node src/config-env-schema.ts",
+    "check": "tsc --noEmit"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "dotenv": "^18.0.5",
+    "env-schema": "^8.0.0",
+    "express": "^5.2.1",
+    "joi": "^18.2.9"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.6",
+    "@types/node": "^26.6.3",
+    "cross-env": "^10.1.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  }
+}
